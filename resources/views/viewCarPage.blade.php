@@ -3,11 +3,11 @@
 @section('title', 'Car List')
 
 @section('content')
-
+@can('isAdmin')
 <div class="wedo" style="display: flex; justify-content: flex-end;padding-right:50px; padding-top:50px; ">
     <button style="width:fit-content;"onclick="window.location.href='{{ route('updateCar') }}'">Update Car Inventory</button>
     </div>
-
+@endcan
     <!-- Brand Buttons -->
     <div class="wedo" >
 </div>
